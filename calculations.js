@@ -1,4 +1,4 @@
-p//1
+//1
 var ticketNum = 2;
 var ticketCost = 14.00;
 var totalTicketCost = ticketNum * ticketCost;
@@ -15,14 +15,34 @@ var Shoes = 60;
 var Jacket = 70;
 
 var Outfit = Sweater + Pants + Shoes + Jacket;
-document.write("<p>Do you have enough funds?:" + (AccountNum > Outfit) + "</p>")
+document.getElementById("Outfit").innerHTML = (AccountNum > Outfit);
 
 
 var pizza = 4;
 var studentEats = 2.5;
 var pizzaSlices = 8;
-Math.round('profPizza' * pizzaSlices )
-document.getElementById(math.round('profPizza')).innerhtml = pizzaSlices * pizza / studentEats;
+var totalpizza = pizzaSlices * pizza / studentEats;
+var a = Math.floor(totalpizza);
+
+document.getElementById("profPizza").innerHTML = Math.floor(12.8) + " students";
+
+let aBuffet = 12;
+let cBuffet = 6;
+let drinks = 1.50;
+let montyRec = aBuffet + aBuffet + cBuffet + drinks + drinks + drinks;
+document.getElementById("Monty").innerHTML = "$" + montyRec;
+
+let week1 = 202.45;
+let week2 = 134.97;
+let week3 = 256.63;
+let week4 = 178.22;
+let weekTotal = week1 + week2 + week3 + week4;
+let numWeeks = 4
+let totalTip = weekTotal / numWeeks;
+let finalTip = totalTip.toFixed(2)
+document.getElementById("tips").innerHTML = "$" + finalTip;
+
+
 
 
 
